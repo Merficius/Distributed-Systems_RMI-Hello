@@ -15,4 +15,5 @@ public interface Hello extends Remote {
     String sayHello() throws RemoteException;
     String sayGoodBye() throws RemoteException;
     Date sendDate(Date d) throws RemoteException;
+    Oferta sendOferta(Oferta o) throws RemoteException; // copy-restore, le mandas el objeto clonado y te regresa el objeto modificado clonado
 }
