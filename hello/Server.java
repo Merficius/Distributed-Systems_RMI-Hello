@@ -1,5 +1,6 @@
 package example.hello;
 	
+import java.util.Date;
 import java.rmi.registry.Registry;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.RemoteException;
@@ -15,6 +16,11 @@ public class Server implements Hello {
 	
 	public String sayGoodBye() {
 		return "GoodBye!";
+    }
+
+	public Date sendDate(Date d) {
+		System.out.println("Inicia: " + d);
+		return new Date();
     }
 	
     public static void main(String args[]) {
