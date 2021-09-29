@@ -14,7 +14,7 @@ public class Server implements Hello {
     }
 	
 	public String sayGoodBye() {
-		return "Hello, world!";
+		return "GoodBye!";
     }
 	
     public static void main(String args[]) {
