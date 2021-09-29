@@ -13,9 +13,14 @@ public class Server implements Hello {
 		return "Hello, world!";
     }
 	
+	public String sayGoodBye() {
+		return "Hello, world!";
+    }
+	
     public static void main(String args[]) {
 	
 		try {
+			// Creation of servant
 	    	Server obj = new Server();
 	    	Hello stub = (Hello) UnicastRemoteObject.exportObject(obj, 0);
 
